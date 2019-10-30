@@ -1,0 +1,26 @@
+PODS:
+  - GPUImage (0.1.7)
+  - Masonry (0.6.4)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+
+DEPENDENCIES:
+  - GPUImage
+  - Masonry (~> 0.6.2)
+  - SDWebImage (~> 3.7)
+
+SPEC REPOS:
+  trunk:
+    - GPUImage
+    - Masonry
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+
+PODFILE CHECKSUM: 5fe773fe847aecba884fb662cc4083ffb1e1bc4d
+
+COCOAPODS: 1.8.4
