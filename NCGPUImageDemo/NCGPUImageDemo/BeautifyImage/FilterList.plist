@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>1</string>
+		<key>name</key>
+		<string>亮度</string>
+		<key>nameEn</key>
+		<string></string>
+		<key>className</key>
+		<string></string>
+		<key>propertyes</key>
+		<array>
+			<dict>
+				<key>propertyName</key>
+				<string></string>
+				<key>min</key>
+				<string></string>
+				<key>normal</key>
+				<string></string>
+				<key>max</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

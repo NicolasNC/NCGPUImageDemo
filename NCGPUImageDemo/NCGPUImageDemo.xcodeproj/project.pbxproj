@@ -20,8 +20,9 @@
 		8F304844236938210002721B /* GPUImageCombinationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F304843236938210002721B /* GPUImageCombinationFilter.m */; };
 		8F304847236938AC0002721B /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F304846236938AC0002721B /* GPUImageBeautifyFilter.m */; };
 		8F30484B23693D860002721B /* NCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F30484A23693D860002721B /* NCModel.m */; };
-		8F30484E23693DB80002721B /* BeautifyImageManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F30484D23693DB80002721B /* BeautifyImageManagerModel.m */; };
 		8F304850236940F00002721B /* origin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F30484F236940F00002721B /* origin.jpg */; };
+		8F304866236A8C720002721B /* FilterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F304865236A8C720002721B /* FilterList.plist */; };
+		8F51BCCD23793A65007D58BF /* HandleManagerFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51BCCC23793A65007D58BF /* HandleManagerFilterModel.m */; };
 		A8255AE3DAD91DDF98485328 /* libPods-NCGPUImageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 117E402A09E96C9C48CD12DC /* libPods-NCGPUImageDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -75,9 +76,10 @@
 		8F304846236938AC0002721B /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		8F30484923693D860002721B /* NCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCModel.h; sourceTree = "<group>"; };
 		8F30484A23693D860002721B /* NCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCModel.m; sourceTree = "<group>"; };
-		8F30484C23693DB80002721B /* BeautifyImageManagerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifyImageManagerModel.h; sourceTree = "<group>"; };
-		8F30484D23693DB80002721B /* BeautifyImageManagerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifyImageManagerModel.m; sourceTree = "<group>"; };
 		8F30484F236940F00002721B /* origin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = origin.jpg; sourceTree = "<group>"; };
+		8F304865236A8C720002721B /* FilterList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FilterList.plist; sourceTree = "<group>"; };
+		8F51BCCB23793A65007D58BF /* HandleManagerFilterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandleManagerFilterModel.h; sourceTree = "<group>"; };
+		8F51BCCC23793A65007D58BF /* HandleManagerFilterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandleManagerFilterModel.m; sourceTree = "<group>"; };
 		D7406C76FA88BAAB4BD17515 /* Pods-NCGPUImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCGPUImageDemo.release.xcconfig"; path = "Target Support Files/Pods-NCGPUImageDemo/Pods-NCGPUImageDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +220,7 @@
 		8F304838236933220002721B /* BeautifyImage */ = {
 			isa = PBXGroup;
 			children = (
+				8F304865236A8C720002721B /* FilterList.plist */,
 				8F30484F236940F00002721B /* origin.jpg */,
 				8F304839236933220002721B /* Model */,
 				8F30483A236933220002721B /* View */,
@@ -229,8 +232,8 @@
 		8F304839236933220002721B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8F30484C23693DB80002721B /* BeautifyImageManagerModel.h */,
-				8F30484D23693DB80002721B /* BeautifyImageManagerModel.m */,
+				8F51BCCB23793A65007D58BF /* HandleManagerFilterModel.h */,
+				8F51BCCC23793A65007D58BF /* HandleManagerFilterModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			files = (
 				8F304805236925EF0002721B /* LaunchScreen.storyboard in Resources */,
 				8F304850236940F00002721B /* origin.jpg in Resources */,
+				8F304866236A8C720002721B /* FilterList.plist in Resources */,
 				8F304802236925EF0002721B /* Assets.xcassets in Resources */,
 				8F304800236925E30002721B /* Main.storyboard in Resources */,
 			);
@@ -446,8 +450,8 @@
 			files = (
 				8F3047FD236925E30002721B /* ViewController.m in Sources */,
 				8F30483E2369336A0002721B /* BeautifyCameraViewController.m in Sources */,
-				8F30484E23693DB80002721B /* BeautifyImageManagerModel.m in Sources */,
 				8F304844236938210002721B /* GPUImageCombinationFilter.m in Sources */,
+				8F51BCCD23793A65007D58BF /* HandleManagerFilterModel.m in Sources */,
 				8F304847236938AC0002721B /* GPUImageBeautifyFilter.m in Sources */,
 				8F3047F7236925E30002721B /* AppDelegate.m in Sources */,
 				8F304808236925EF0002721B /* main.m in Sources */,
@@ -624,6 +628,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XS355TM82;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NCGPUImageDemo/Common",
+				);
 				INFOPLIST_FILE = NCGPUImageDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -643,6 +651,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XS355TM82;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NCGPUImageDemo/Common",
+				);
 				INFOPLIST_FILE = NCGPUImageDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (

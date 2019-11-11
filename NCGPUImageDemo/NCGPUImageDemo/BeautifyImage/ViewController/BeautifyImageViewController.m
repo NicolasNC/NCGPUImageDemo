@@ -16,7 +16,9 @@
 @end
 
 @implementation BeautifyImageViewController
-
+- (void)writePlist{
+   
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -30,24 +32,25 @@
     self.originImageView.image = image;
     
      //对比度 0  1  4
-//    GPUImageContrastFilter *filter = [[GPUImageContrastFilter alloc]init];
-//    filter.contrast = 1.5;
-//    [filter forceProcessingAtSize:_image.size];
-//    [self updataImage:filter];
-//    return;
+    GPUImageContrastFilter *filter = [[GPUImageContrastFilter alloc]init];
+    filter.contrast = 1.5;
+    [filter forceProcessingAtSize:_image.size];
+    [self updataImage:filter];
+
     
     //饱和度 0 1 2.0
     GPUImageSaturationFilter *filter1 = [[GPUImageSaturationFilter alloc]init];
     filter1.saturation = 1.5;
     [filter1 forceProcessingAtSize:_image.size];
     [self updataImage:filter1];
-    return;
     
     //曝光度 -10 0 10
     GPUImageExposureFilter *filter2 = [[GPUImageExposureFilter alloc] init];
-     filter2.exposure = 8;
+    filter2.exposure = 8;
     [filter2 forceProcessingAtSize:_image.size];
     [self updataImage:filter2];
+    
+    
     
     
     //色温(白平衡)
